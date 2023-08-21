@@ -5,12 +5,16 @@ from pynput import keyboard
 # Variable global para el estado del botón
 si_button_is_on = False
 
+# FALTA PROGRAMAR
+#funcion que cuando la alarma este prendida, haga un sonido.
 def play_alert_sound(bus_time):
     if bus_time == '5':
         print("¡Suena piiiiii!")
         global si_button_is_on
         si_button_is_on = False
 
+# FALTA PROGRAMAR
+#sera una funcion que cuando toque un boton, active algun simbolo, y si lo oprimo, lo desactivara, este sera el que dice si poner la alarma o no.
 def on_key_release(key):
     global si_button_is_on
     if key == keyboard.KeyCode.from_char('o'):
@@ -28,12 +32,13 @@ def display_bus_times(bus_times):
             print(bus_times[0])
         print(bus_times[1])
 
+# FALTA PROGRAMAR
 def main():
     listener = keyboard.Listener(on_release=on_key_release)
     listener.start()
     
     while True:
-        api_url = "" # bus#numero
+        api_url = ""
         
         
         try:
