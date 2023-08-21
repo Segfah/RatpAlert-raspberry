@@ -38,7 +38,8 @@ def main():
     listener.start()
     
     while True:
-        api_url = ""
+        api_url = "https://api-iv.iledefrance-mobilites.fr/lines/v2/line:IDFM:C01398/stops/stop_area:IDFM:73192/realTime"
+        #api_url = "https://api-iv.iledefrance-mobilites.fr/lines/v2/line:IDFM:C01228/stops/stop_area:IDFM:73208/realTime"
         
         
         try:
